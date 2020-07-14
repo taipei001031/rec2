@@ -1,0 +1,218 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* ここから */
+.clearfix::after{
+  content:"";
+  display: block;
+  clear: both;
+}
+/* header */
+header{
+  height:70px;
+  background-color:#ec715f;
+}
+header .container{
+  width:1024px;
+  margin:0 auto;
+}
+.header-logo{
+  height:70px;
+  float:left;
+}
+nav{
+  float: right;
+}
+.list-item{
+  float: left;
+  list-style: none;
+}
+.list-item a{
+  color:#fafafa;
+  text-decoration: none;
+  line-height:70px;
+  margin:0 30px;
+  font-size:16px;
+}
+/* main-visual */
+.main-visual{
+  background-image: url(img/mv.png);
+  background-size: cover;
+  background-position:center;
+  height: 650px;
+  text-align: center;
+}
+.main-visual h1{
+  color: #fafafa;
+  font-size: 64px;
+  padding:200px 0 10px 0;
+}
+.main-visual p{
+  color: #fafafa;
+  font-size: 20px;
+}
+/* main */
+main{
+  background-color: #eceff1;
+}
+main .container{
+  width:920px;
+  text-align: center;
+  margin:0 auto;
+}
+.heading{
+  padding-top: 90px;
+  font-size: 32px;
+  color: #000000;
+  position: relative;
+  display: inline-block;
+}
+h2::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -8px;/*線の上下位置*/
+  display: inline-block;
+  width: 70px;/*線の長さ*/
+  height: 3px;/*線の太さ*/
+  transform: translateX(-50%);
+  background-color:#ec715f;/*線の色*/
+}
+.heading-text{
+  margin: 38px 0 30px 0;
+  font-size: 16px;
+  color:#000000;  
+}
+.img-box{
+  height:250px;
+  width:300px;
+}
+.img-box {
+  margin-right:10px;
+  margin-bottom:10px;
+  float: left;
+}
+.img-boxes :nth-child(3n){
+  margin-right: 0px;
+}
+.img-boxes :nth-child(n+4){
+  margin-bottom: 90px;
+}
+.strength-icon{
+  font-size: 60px;
+}
+.feature .container{
+  width:980px;
+  margin:0 auto;
+  text-align: center;
+}
+.strengthes {
+  margin-bottom: 90px;
+}
+.strength{
+  width:320px;
+  float: left;
+  margin-right: 10px;
+}
+.strengthes :nth-last-child(1){
+  margin-right: 0;
+}
+.strength h3{
+  margin: 10px 0;
+  font-size: 20px;
+  color: #000000;
+}
+.text{
+  text-align: left;
+  font-size: 16px;
+  color: #000000;
+}
+/* Profile */
+.profile{
+  background-color: #eceff1;
+  padding-bottom: 90px;
+}
+.profile .container{
+  width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+.left-profile{
+  width: 512px;
+  text-align: center;
+  float: left;
+}
+.left-profile img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.right-profile{
+  width: 512px;
+  text-align:left;
+  float: left;
+}
+.right-profile h3{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.myname-text{
+  margin-bottom: 20px;
+}
+/* Contact */
+.contact{
+  padding-bottom:90px;
+}
+.contact .container{
+  width:800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-bottom{
+  margin: 0 auto;
+}
+.left-contact{
+  float: left;
+  width: 400px;
+}
+.right-contact{
+  float: right;
+  width: 400px;
+}
+.left-contact-container{
+  margin: 0 auto;
+  width: 130px;
+  text-align: left;
+}
+.right-contact-container{
+  margin: 0 auto;
+  width:190px;
+  text-align: left;
+}
+.contact-bottom h3{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.tel{
+  margin-top: 20px;
+}
+.sns-icon{
+  font-size: 50px;
+  float: left;
+  margin-right: 20px;
+}
+.right-contact-container :nth-last-child(1){
+  margin-right: 0px;
+}
+footer{
+  height: 60px;
+  background-color: #ec715f;
+  text-align: center;
+}
+footer p{
+  color: #fafafa;
+  font-size: 16px;
+  line-height: 60px;
+}
